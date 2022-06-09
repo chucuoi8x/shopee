@@ -1,0 +1,20 @@
+.header{
+    height: 119px;
+    background-image: linear-gradient(0, #ff6633, #f53d2d);
+}
+
+.header__navbar {
+    height: 34px;
+}
+
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.navbar__container-list {
+    display: inline-flex;
+    list-style: none;
+    padding-left: 0;
+}

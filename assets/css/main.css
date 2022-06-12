@@ -18,3 +18,87 @@
     list-style: none;
     padding-left: 0;
 }
+
+.navbar__container-item{
+    margin: 0 8px;
+    position: relative;
+}
+
+.navbar__container-item,
+.navbar__container-item-link, 
+.navbar__container-item-lang {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 400;
+}
+
+.navbar__container-item-link:hover, 
+.navbar__container-item-lang:hover,
+.navbar__container-icon-link:hover{
+    cursor: pointer;
+    color: rgba(255,255,255,0.7);
+}
+
+.navbar__container-item-lang {
+    border: 0px;
+    outline: 0px;
+    background: none;
+    margin: -2px 0 0 0;
+}
+
+.navbar__container-item-link--seprate::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 2px solid rgb(249,108,91);
+    height: 1.6rem;
+    right: -9px;
+    top: 0;
+}
+
+.navbar__container-icon-link {
+    margin-left: 4px;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.navbar__container--downloadApp {
+    position: relative;
+}
+
+.navbar__qrCode--img::after, 
+.navbar__container--downloadApp::after{
+    content: none;
+    display: none;
+}
+
+.navbar__qrCode {
+    position: absolute;
+    width: 180px;
+    background-color: var(--white-color);
+    border-radius: 4px;
+}
+
+.navbar__qrCode--img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar_qrCode--store {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+}
+
+.qrCode__store {
+    width: 100%;
+    height: 10px;
+    margin-left: -4px;
+}
+
+.qrCode__linkAppStore {
+    padding: 0;
+}

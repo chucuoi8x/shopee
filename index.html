@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <title>Shopee-clone</title>
 </head>
@@ -16,34 +17,60 @@
                 <nav class="navbar__container grid">
                     <ul class="navbar__container-list">
                         <li class="navbar__container-item">
-                            <a href="" class="navbar__container-item-link">Kênh người bán</a>
+                            <a href="" class="navbar__container-item-link navbar__container-item-link--seprate">Kênh người bán</a>
                         </li>
                         <li class="navbar__container-item">
-                            <a href="" class="navbar__container-item-link">Trở thành người bán Shopee</a>
+                            <a href="" class="navbar__container-item-link navbar__container-item-link--seprate" title="Trở thành người bán Shopee">Trở thành người bán Shopee</a>
                         </li>
                         <li class="navbar__container-item">
-                            <a href="" class="navbar__container-item-link">Tải ứng dụng</a>
+                            <a href="https://shopee.vn/web/" class="navbar__container-item-link navbar__container-item-link--seprate navbar__container--downloadApp">
+                                Tải ứng dụng
+                                <div class="navbar__qrCode">
+                                    <img src="./assets/img/qr_code.png" alt="" class="navbar__qrCode--img">
+                                    <div class="navbar_qrCode--store">
+                                        <a href="" class="qrCode__linkAppStore qrCode__store">
+                                            <img src="./assets/img/app_store.png" alt="" class="qrCode__appStore">
+                                        </a>
+                                        <a href="" class="qrCode__linkGooglePlay qrCode__store">
+                                            <img src="./assets/img/google_play.png" alt="" class="qrCode__googlePlay">
+                                        </a>
+                                        <!-- <a href="" class="qrCode__linkAppGallery">
+                                            <img src="./assets/img/app_Gallery.png" alt="" class="qrCode__appGallery qrCode__store">
+                                        </a> -->
+                                    </div>
+                                </div>
+                            </a>
                         </li>
-                        <li class="navbar__container-item">
-                            <a href="" class="navbar__container-item-link">kết nối</a>
+                        <li class="navbar__container-item"> Kết nối
+                            <a href="" class="navbar__container-icon-link" title="Kết nối facebook!">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="" class="navbar__container-icon-link" title="Kết nối instagram!">
+                                <i class="fa-brands fa-instagram-square"></i>
+                            </a>
                         </li>
                     </ul>
     
                     <ul class="navbar__container-list">
                         <li class="navbar__container-item">
-                            <a href="" class="navbar__container-item-link">Thông báo</a>
+                            <a href="" class="navbar__container-item-link">
+                                <i class="fa-regular fa-bell"></i>
+                                Thông báo</a>
                         </li>
                         <li class="navbar__container-item">
-                            <a href="" class="navbar__container-item-link">Hỗ trợ</a>
+                            <a href="" class="navbar__container-item-link">
+                                <i class="fa-regular fa-circle-question"></i>
+                                Hỗ trợ</a>
                         </li>
                         <li class="navbar__container-item">
+                            <i class="fa-solid fa-globe nav"></i>
                             <select class="navbar__container-item-lang">
                                 <option value="vi">Tiếng Việt</option>
                                 <option value="en">Tiếng Anh</option>
                             </select>
                         </li>
                         <li class="navbar__container-item">
-                            <a href="" class="navbar__container-item-link">Đăng ký</a>
+                            <a href="" class="navbar__container-item-link navbar__container-item-link--seprate">Đăng ký</a>
                         </li>
                         <li class="navbar__container-item">
                             <a href="" class="navbar__container-item-link">Đăng nhập</a>

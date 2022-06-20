@@ -63,42 +63,62 @@
     text-decoration: none;
 }
 
+
+/* Header QR-Code */
+.navbar__container-item--view-qrCode:hover .navbar__qrCode
+{
+    display: block;
+}
+
+.navbar__container-item--view-qrCode::before{
+    display: block;
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 108%;
+    top: 1rem;
+}
+
 .navbar__container--downloadApp {
     position: relative;
 }
 
-.navbar__qrCode--img::after, 
-.navbar__container--downloadApp::after{
-    content: none;
+.navbar__qrCode .navbar__qrCode--img::after, 
+.navbar__qrCode .navbar__container--downloadApp::after{
     display: none;
 }
 
 .navbar__qrCode {
+    display: none;
     position: absolute;
     width: 180px;
     background-color: var(--white-color);
     border-radius: 4px;
+    top: 3rem;
+    animation: slidein 3s linear 1s;
 }
 
 .navbar__qrCode--img {
     display: block;
     width: 100%;
     margin: 0 auto;
+    border-radius: 2px;
 }
 
-.navbar_qrCode--store {
-    width: 100%;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content:space-between ;
+.navbar_qrCode--store, .navbar_qrCode--store2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 11px;
 }
 
 .qrCode__store {
     width: 100%;
-    height: 10px;
-    margin-left: -4px;
+    padding: 0 3px;
 }
 
-.qrCode__linkAppStore {
-    padding: 0;
+.navbar_qrCode--store2 .qrCode__store {
+    width: 50%;
+    margin-top: 1rem;
+    padding: 0 3px;
 }
+/* End Header QR-Code */

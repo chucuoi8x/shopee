@@ -95,7 +95,6 @@
     background-color: var(--white-color);
     border-radius: 4px;
     top: 3rem;
-    animation: slidein 3s linear 1s;
 }
 
 .navbar__qrCode--img {
@@ -122,3 +121,35 @@
     padding: 0 3px;
 }
 /* End Header QR-Code */
+
+/* Navbar notification */
+.navbar__notification{
+    position: absolute;
+    top: 3rem;
+    width: 404px;
+    height: 404px;
+    background-color: var(--white-color);
+    right: 0;
+    border-radius: 2px;
+    border: 1px solid #D3D3D3;
+}
+
+.navbar__notification--body{
+    display: flex;
+}
+
+.navbar__notification--img {
+    width: 50%;
+    justify-content: center;
+}
+
+.navbar__notification--footer{
+    justify-content: flex-end;
+}
+
+.navbar__notification--signup {
+
+}
+.navbar_notification--login {
+
+}

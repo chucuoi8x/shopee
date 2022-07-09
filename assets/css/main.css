@@ -136,11 +136,20 @@
 
 .navbar__notification--body{
     display: flex;
+    height: 380px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar__notification--img {
-    width: 50%;
+    width: 30%;
     justify-content: center;
+}
+
+.navnar__notificatiton--label{
+    color: var(--black-color);
+    padding-top: 23px;
 }
 
 .navbar__notification--footer{
